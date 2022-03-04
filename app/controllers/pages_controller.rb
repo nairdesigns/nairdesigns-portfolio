@@ -23,7 +23,9 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @page.save
-        format.html { redirect_to page_url(@page), notice: 'Page was successfully created.' }
+        format.html do
+          redirect_to page_url(@page), notice: 'Page was successfully created.'
+        end
         format.json { render :show, status: :created, location: @page }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -36,7 +38,9 @@ class PagesController < ApplicationController
   def update
     respond_to do |format|
       if @page.update(page_params)
-        format.html { redirect_to page_url(@page), notice: 'Page was successfully updated.' }
+        format.html do
+          redirect_to page_url(@page), notice: 'Page was successfully updated.'
+        end
         format.json { render :show, status: :ok, location: @page }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -50,7 +54,9 @@ class PagesController < ApplicationController
     @page.destroy
 
     respond_to do |format|
-      format.html { redirect_to pages_url, notice: 'Page was successfully destroyed.' }
+      format.html do
+        redirect_to pages_url, notice: 'Page was successfully destroyed.'
+      end
       format.json { head :no_content }
     end
   end
