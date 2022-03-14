@@ -1,0 +1,62 @@
+.fade-in {
+  animation: fadeIn 1.5s;
+}
+
+.fade-in-long {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLong {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.slide {
+  position: relative;
+  left: -100px;
+  background: blue;
+  -webkit-animation: slide 0.5s forwards;
+  animation: slide 0.5s forwards;
+  z-index: -1000;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.extra-delay {
+  animation-delay: 1.3s;
+}
