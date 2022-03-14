@@ -26,3 +26,8 @@
 // Your CSS partials
 @import "components/index";
 @import "bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Quicksand", sans-serif !important;
+  font-family: "Varela", sans-serif !important;
+}
