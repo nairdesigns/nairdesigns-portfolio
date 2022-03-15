@@ -3,7 +3,7 @@
 }
 
 .fade-in-long {
-  animation: fadeInLong 3s;
+  animation: fadeInLong 4s;
 }
 
 @keyframes fadeIn {
@@ -32,25 +32,25 @@
   border: 1px solid black;
 }
 
-.slide {
+.sliding {
   position: relative;
   left: -100px;
-  -webkit-animation: slide 0.5s forwards;
-  animation: slide 0.5s forwards;
+  -webkit-animation: sliding 0.5s forwards;
+  animation: sliding 0.5s forwards;
   // z-index: 1000;
   animation-delay: 1s;
   // pointer-events: none;
   background: transparent !important;
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes sliding {
   100% {
     left: 0;
     opacity: 1;
   }
 }
 
-@keyframes slide {
+@keyframes sliding {
   100% {
     left: 0;
     opacity: 1;
