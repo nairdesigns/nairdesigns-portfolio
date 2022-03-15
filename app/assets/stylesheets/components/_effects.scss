@@ -16,10 +16,10 @@
 }
 
 @keyframes fadeInLong {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
@@ -32,37 +32,29 @@
   border: 1px solid black;
 }
 
-.sliding {
-  position: relative;
-  left: -100px;
-  -webkit-animation: sliding 0.5s forwards;
-  animation: sliding 0.5s forwards;
+.slide {
+  // position:relative;
+  // left: -100px;
+  // -webkit-animation: sliding 0.5s forwards;
+  // animation: sliding 0.5s forwards;
   // z-index: 1000;
-  animation-delay: 1s;
+  // animation-delay: 1s;
   // pointer-events: none;
   background: transparent !important;
 }
 
-@-webkit-keyframes sliding {
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
+// @-webkit-keyframes sliding {
+//   100% {
+//     left: 0;
+//   }
+// }
 
-@keyframes sliding {
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
+// @keyframes sliding {
+//   100% {
+//     left: 0;
+//   }
+// }
 
 .extra-delay {
-  animation-delay: 1.3s;
-}
-
-button {
-  position: relative;
-  -webkit-transform: translateZ(200px); /* Equivalent or greater than parent's*/
-  transform: translateZ(200px);
+  animation-delay: 1.5s;
 }
