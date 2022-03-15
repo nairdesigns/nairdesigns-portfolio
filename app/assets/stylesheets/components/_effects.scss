@@ -3,7 +3,7 @@
 }
 
 .fade-in-long {
-  animation: fadeIn 2s;
+  animation: fadeInLong 3s;
 }
 
 @keyframes fadeIn {
@@ -35,12 +35,12 @@
 .slide {
   position: relative;
   left: -100px;
-  background: blue;
   -webkit-animation: slide 0.5s forwards;
   animation: slide 0.5s forwards;
-  z-index: -1000;
+  // z-index: 1000;
   animation-delay: 1s;
-  opacity: 0;
+  // pointer-events: none;
+  background: transparent !important;
 }
 
 @-webkit-keyframes slide {
@@ -59,4 +59,10 @@
 
 .extra-delay {
   animation-delay: 1.3s;
+}
+
+button {
+  position: relative;
+  -webkit-transform: translateZ(200px); /* Equivalent or greater than parent's*/
+  transform: translateZ(200px);
 }
