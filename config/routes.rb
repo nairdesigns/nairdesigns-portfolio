@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#index'
   get 'about' => 'about#about'
   get 'works' => 'works#works'
+  get 'contact' => 'contact#contact'
 
   resources :pages
 end
