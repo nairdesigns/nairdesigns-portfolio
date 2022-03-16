@@ -33,25 +33,28 @@
 }
 
 .slide {
-  // position:relative;
-  // left: -100px;
-  // -webkit-animation: sliding 0.5s forwards;
-  // animation: sliding 0.5s forwards;
+  position:relative;
+  left: -100px;
+  -webkit-animation: slide 0.5s forwards;
+  animation: slide 0.5s forwards;
   // z-index: 1000;
-  // animation-delay: 1s;
+  animation-delay: 1s;
   // pointer-events: none;
   background: transparent !important;
+  opacity: 0;
 }
 
 @-webkit-keyframes slide {
   100% {
     left: 0;
+    opacity: 1;
   }
 }
 
 @keyframes slide {
   100% {
     left: 0;
+    opacity: 1;
   }
 }
 
